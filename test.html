@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Right Aligned Headings</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .headings {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-right: 50px;
+      text-align: right;
+    }
+
+    .headings h2 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .headings h2::before {
+      content: "• ";
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="headings">
+    <h2>About</h2>
+    <h2>Profile</h2>
+    <h2>Contact</h2>
+  </div>
+
+</body>
+</html>
